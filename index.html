@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+
+<body>
+    <div>
+        <p class="js-display display"></p>   
+
+    </div>
+    <div class="calculator-body">
+
+        <!-- All clear / reset-->
+        <div class="calc-num">
+            <button
+            onclick = "calc = '';
+            console.log(calc);
+            display();"
+            class="num">
+                AC
+            </button>
+        </div>
+
+        <!-- add or take out negative symbol -->
+        <div class="calc-num">
+            <button
+            onclick = "negOrPos();"
+            class="num">
+                +/-
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('%');"
+            class="num">
+                %
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc(' / ');"
+            class="symbol">
+                /
+            </button>
+        </div>
+        
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('1');"
+            class="num">1</button>
+        </div>
+
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('2');"
+            class="num">
+                2
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('3');"
+            class="num">
+                3
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc(' * ');"
+            class="symbol">
+                X
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('4');"
+            class="num">
+                4
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('5');"
+            class="num">
+                5
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('6');"
+            class="num">
+                6
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc(' - ');"
+            class="symbol">
+                -
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('7');"
+            class="num">
+                7
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('8');"
+            class="num">
+                8
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "
+            updateCalc('9');"
+            class="num">
+                9
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc(' + ');"
+            class="symbol">
+                +
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "delLastChar();"
+            class="num">
+                Del
+            </button>
+        </div>
+
+        <div class="calc-num zero-button">
+            <button
+            onclick = "
+            updateCalc('0');"
+            class="num">
+                0
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "updateCalc('.');"
+            class="symbol">
+                .
+            </button>
+        </div>
+
+        <div class="calc-num">
+            <button
+            onclick = "calc = eval(calc);
+            calc = parseFloat(calc.toFixed(4));
+            display();"
+            class="symbol">
+                =
+            </button>
+        </div>
+    </div>
+
+    <script src="javascript/calculator.js"></script>
+
+</body>
+</html>
