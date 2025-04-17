@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <title></title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/calculator.css">
 </head>
 
@@ -13,177 +13,152 @@
         <p class="js-display display"></p>   
 
     </div>
+
+    <!-- Used to input numbers/symbols on webpage as they are clicked are typed -->
     <div class="calculator-body">
 
         <!-- All clear / reset-->
         <div class="calc-num">
             <button
-            onclick = "calc = '';
-            console.log(calc);
-            display();"
-            class="num">
+            class="num" data-action="clear">
                 AC
             </button>
         </div>
 
-        <!-- add or take out negative symbol -->
         <div class="calc-num">
             <button
-            onclick = "negOrPos();"
-            class="num">
+            class="num" data-action="negate">
                 +/-
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('%');"
-            class="num">
+            class="num" data-value="%">
                 %
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc(' / ');"
-            class="symbol">
+            class="symbol" data-value="/">
                 /
             </button>
         </div>
         
         <div class="calc-num">
             <button
-            onclick = "updateCalc('1');"
-            class="num">1</button>
+            class="num" data-value="1">1</button>
         </div>
 
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('2');"
-            class="num">
+            class="num" data-value="2">
                 2
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('3');"
-            class="num">
+            class="num" data-value="3">
                 3
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc(' * ');"
-            class="symbol">
+            class="symbol" data-value="*">
                 X
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('4');"
-            class="num">
+            class="num" data-value="4">
                 4
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('5');"
-            class="num">
+            class="num" data-value="5">
                 5
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('6');"
-            class="num">
+            class="num" data-value="6">
                 6
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc(' - ');"
-            class="symbol">
+            class="symbol" data-value="-">
                 -
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('7');"
-            class="num">
+            class="num" data-value="7">
                 7
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('8');"
-            class="num">
+            class="num" data-value="8">
                 8
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "
-            updateCalc('9');"
-            class="num">
+            class="num" data-value="9">
                 9
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc(' + ');"
-            class="symbol">
+            class="symbol" data-value="+">
                 +
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "delLastChar();"
-            class="num">
+            class="num" data-action="delete">
                 Del
             </button>
         </div>
 
         <div class="calc-num zero-button">
             <button
-            onclick = "
-            updateCalc('0');"
-            class="num">
+            class="num" data-value="0">
                 0
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "updateCalc('.');"
-            class="symbol">
+            class="symbol" data-value=".">
                 .
             </button>
         </div>
 
         <div class="calc-num">
             <button
-            onclick = "calc = eval(calc);
-            calc = parseFloat(calc.toFixed(4));
-            display();"
-            class="symbol">
+            class="symbol" data-action="evaluate">
                 =
             </button>
         </div>
     </div>
 
-    <script src="javascript/calculator.js"></script>
+    <script src="calculator.js"></script>
 
 </body>
 </html>
